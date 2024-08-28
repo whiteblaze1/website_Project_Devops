@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-deploy
+  labels:
+    app: custom
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: custom
+  template:
+    metadata:
+      labels:
+        app: custom
+    spec:
+      containers:
+        - name: devo_p
+          image: whiteblaze098/dev
+          ports:
+            - containerPort: 80
