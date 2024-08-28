@@ -15,7 +15,7 @@ spec:
         app: custom
     spec:
       containers:
-        - name: devo_p
+        - name: devo
           image: whiteblaze098/dev
           ports:
             - containerPort: 80
