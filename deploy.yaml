@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: devo
-          image: whiteblaze098/devo
+          image: whiteblaze098/devop
           ports:
             - containerPort: 80
